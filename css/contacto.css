@@ -1,0 +1,317 @@
+@font-face {
+  font-family: 'Marvel';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/marvel/v10/nwpVtKeoNgBV0qa4llTF.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+body {
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	font-family: Marvel;
+	font-size: 1em;
+	line-height: 1.5em;
+	padding-top: 80px; /* Relleno superior igual a la altura de la cabecera*/
+}
+
+h1 {
+	font-size: 2.3em;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+
+p {
+	margin: 0 0 1.5em 0;
+}
+
+.centrallogo {
+	max-width: 400px;
+    min-width: 100px;
+	height: auto;
+    display: block;
+    margin: 40px auto;
+    animation-name: marvel;
+    animation-duration: 4s;
+    z-index: -1;
+}
+
+.imglogo{
+    display: inline-block;
+    width: 70px;
+    
+}
+
+@keyframes marvel{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
+#main-header {
+	background-color: rgba(0, 0, 0, 1);
+	height: 80px;
+	
+
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}	
+
+#main-header a {
+    color: rgb(185, 2, 2);
+}
+
+
+#logo-header {
+    float: left;
+    padding: 15px 0 0 30px;
+    font-size: larger;
+    
+}
+
+
+#logo-header .site-name {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+#logo-header .site-desc {
+    display: block;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #999;
+}
+    
+
+/*
+    * Navegación
+    */
+    nav{
+        float: right; 
+        min-width: max-content;
+     }
+     
+     nav ul {
+       list-style:none;
+       margin:0;
+       padding:0;
+       padding-right: 50px;
+     }
+     
+     nav ul a {
+       display:block;
+       color:red;
+       text-decoration:none; 
+       font-size:large;
+       padding: 0 30px;
+       text-transform:uppercase;
+       letter-spacing:3px;
+     }
+     
+     nav ul li {
+       position: relative;
+       line-height: 80px;
+       float:left;
+       margin:0;
+       padding:0;
+     }
+     
+     nav ul a:hover {
+       color: white;
+       transform: translateY(-2px);
+       box-shadow: 0px 2px white;
+       font-size: 20px;
+       
+     }
+     
+     nav ul ul {
+       display:none;
+       position:absolute;
+       top:100%;
+       left:0;
+       padding:0;
+       background-color: black;
+     }
+     
+     nav ul ul li {
+       float:none;
+       width:150px
+     }
+     
+     nav ul ul a {
+       line-height:120%;
+       padding:10px 15px;
+     }
+     
+     nav ul li:hover > ul {
+       display:block;
+       
+     }
+ 
+     /*vertical submenu*/
+
+
+ 
+#pestañas:hover {
+   
+    transform:translateY(-2px);
+    display: block;
+    box-shadow: 0px 2px white;
+    font-size: 20px;
+    
+}
+ 
+    
+
+#main-content {
+    
+    color: rgb(192, 191, 191);
+    width: 50%;
+    max-width: 60%;
+    margin: 20px auto;
+    margin-bottom: 300px;
+    word-spacing: 3px;
+    font-size: large;
+   
+}
+
+
+.content{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+#main-content header,
+#main-content .content {
+    padding: 40px;
+}
+
+#main-content header{
+    color: red;
+    
+}
+
+
+
+
+
+    
+ /* nuevo */   
+
+input[type=text],input[type=email], select, textarea {
+    background-color: #cccccc;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #9b0505;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #bb0303;
+    
+    
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 500px;
+    color: grey;
+  }
+
+  #main-footer {
+    background: rgb(0, 0, 0);
+    color: rgb(165, 164, 164);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    height: 60px;
+}
+#main-footer p {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+}
+
+#main-footer a {
+    color: rgb(185, 182, 182);
+}
+
+#main-footer img{
+    width: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+    float: right;
+    transition: width 0.5s;
+}
+
+#main-footer img:hover{
+    width: 1.9em;
+    box-shadow: rgb(255, 0, 212) 0px 0px 10px 2px;
+    background-color: rgba(255, 0, 212,0.6);
+    border-radius: 7px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    nav ul li a {
+        
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+
+
+    #main-footer p {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+
+    #main-footer img{
+        display: block;
+        width: 25px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 15px;
+        float: right;
+    }
+
+
+}

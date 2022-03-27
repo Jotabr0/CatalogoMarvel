@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="css/contacto.css" />
+</head>
+
+<body style="background-image: url(recursos/contacto.jpg);">
+
+    <header id="main-header">
+
+        <a id="logo-header" >
+            <img class="imglogo" src="recursos/logomarvel.png" alt="marvel logo" />
+            <span class="site-name">WIKI</span>
+            <span class="site-desc">Wakanda Forever </span>
+        </a>
+
+        <nav>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a>Peliculas</a>
+                <ul>
+                    <li><a href="fase1.html">Fase 1</a></li>
+                    <li><a href="fase2.html">Fase 2</a></li>
+                    <li><a href="fase3.html">Fase 3</a></li>
+                    <li><a href="fase4.html">Fase 4</a></li>
+                  </ul>
+              </li>
+              <li><a href="personajes.html">Personajes</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              
+              
+            </ul>
+            </nav>
+
+    </header>
+
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="name" placeholder="Tu nombre..">
+      
+          <label for="correo">Correo Electrónico</label>
+          <input type="email" id="correo" name="email" placeholder="Ej: usuario@gmail.com">
+      
+          <label for="asunto">Asunto</label>
+          <select id="asunto" name="asun">
+            <option value="info">Información</option>
+            <option value="asis">Atención al Cliente</option>
+            <option value="report">Denunciar</option>
+          </select>
+      
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="msg" placeholder="¿En qué podemos ayudarle..?" style="height:150px"></textarea>
+      
+          <input type="submit" value="Enviar">
+      
+        </form>
+      </div> 
+
+  
+
+
+
+
+      <footer id="main-footer">
+
+        <div id="google_translate_element" style="bottom: 0px;display: inline-block;float: left;"></div>
+ 
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <p>&copy; 2022 <a>Juan Fernández Sánchez</a></p>
+    
+        <a href="http://www.facebook.com" target="blank">
+          <img src="recursos/facebook.png">
+      </a>
+      <a href="http://www.twitter.com" target="blank">
+          <img src="recursos/twitter.png" >
+      </a><a href="http://www.youtube.com"target="blank">
+          <img src="recursos/youtube.png">
+      </a><a href="http://www.instagram.com" target="blank">
+          <img src="recursos/instagram.png">
+      </a>
+    
+    
+    
+      </footer>
+
+</body>
+
+</html>
